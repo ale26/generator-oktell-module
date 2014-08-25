@@ -1,0 +1,5 @@
+{
+  "name": "<%= moduleId %>",
+  "description": "<%= moduleId %> module for Oktell Web Client",
+  "version": "0.1.0"
+}

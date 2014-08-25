@@ -1,0 +1,5 @@
+/* Use .content--module-<%= moduleId %> as parent */
+
+.content--module-<%= moduleId %> .some-class {
+  display: block;
+}

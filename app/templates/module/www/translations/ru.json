@@ -1,0 +1,3 @@
+{
+  "title": "<%= moduleId.substr(0,1).toUpperCase() + moduleId.substr(1) %>"
+}

@@ -1,0 +1,36 @@
+{
+  "name": "generator-oktell-module",
+  "version": "0.1.0",
+  "description": "Generate modules for Oktell Web Client",
+  "license": "MIT",
+  "main": "app/index.js",
+  "repository": "telsystems/generator-oktell-module",
+  "author": {
+    "name": "Ayrat Aminev",
+    "email": "airato.a@gmail.com",
+    "url": "https://github.com/airato"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "app"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "yeoman-generator": "^0.17.3",
+    "chalk": "^0.5.0",
+    "yosay": "^0.3.0"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "peerDependencies": {
+    "yo": ">=1.0.0"
+  }
+}
