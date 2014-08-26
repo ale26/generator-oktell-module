@@ -1,6 +1,6 @@
 {
   "name": "generator-oktell-module",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Generate modules for Oktell Web Client",
   "license": "MIT",
   "main": "app/index.js",
