@@ -1,3 +1,7 @@
+## Описание
+
+[Yeoman](http://yeoman.io/)-генератор модуля для веб-клиента [Oktell](http://oktell.ru/)
+
 ## Установка зависимостей
 
 - Установить [node.js](http://nodejs.org/)
