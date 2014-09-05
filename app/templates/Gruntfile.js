@@ -168,7 +168,7 @@ module.exports = function (grunt) {
     cssmin: {
       dist: {
         files: {
-          '<%%= config.wwwDist %>/styles/main.css': manifest.styles.map(function(path){ return '.tmp/' + path })
+          '<%%= config.wwwDist %>/styles/styles.css': manifest.styles.map(function(path){ return '.tmp/' + path; })
         }
       }
     },
@@ -177,7 +177,7 @@ module.exports = function (grunt) {
       dist: {
         files: {
           '<%%= config.wwwDist %>/scripts/scripts.js': manifest.scripts.map(function(path){
-            return '.tmp/scripts/' + path
+            return '.tmp/scripts/' + path;
           })
         }
       }
@@ -250,7 +250,8 @@ module.exports = function (grunt) {
             '*.html',
             'views/{,*/}*.html',
             'images/{,*/}*.{webp}',
-            'fonts/*'
+            'fonts/*',
+            'translations/*'
           ]
         }, {
           expand: true,
@@ -298,6 +299,21 @@ module.exports = function (grunt) {
             dest: ''
         }]
       }
+    },
+
+    'json-replace': {
+      options: {
+        space: '  ',
+        replace: {
+          scripts: 'scripts/scripts.js',
+          styles: 'styles/styles.css'
+        }
+      },
+      manifest: {
+        files : {
+          '<%= config.dist %>/manifest.json': '<%= config.dist %>/manifest.json'
+        }
+      },
     }
 
   });
@@ -326,6 +342,7 @@ module.exports = function (grunt) {
     'cssmin',
     'uglify',
     'htmlmin',
+    'json-replace',
     'compress',
     'clean:distModule'
   ]);
