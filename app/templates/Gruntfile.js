@@ -311,7 +311,7 @@ module.exports = function (grunt) {
       },
       manifest: {
         files : {
-          '<%= config.dist %>/manifest.json': '<%= config.dist %>/manifest.json'
+          '<%%= config.dist %>/manifest.json': '<%%= config.dist %>/manifest.json'
         }
       },
     }
