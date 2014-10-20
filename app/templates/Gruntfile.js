@@ -25,6 +25,10 @@ var httpProxy = require('http-proxy'),
     target: 'http://' + config.oktellServerHost
   });
 
+if ( ! config.oktellServerHost ) {
+  throw new Error('Need to set Oktell Server hostname');
+}
+
 
 module.exports = function (grunt) {
 
