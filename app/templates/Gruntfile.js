@@ -264,6 +264,11 @@ module.exports = function (grunt) {
           src: ['generated/*']
         }, {
           expand: true,
+          cwd: '<%= config.modulePath %>/',
+          dest: '<%= config.dist %>/',
+          src: [(manifest.svcScriptDir || 'scripts') + '/**/*']
+        }, {
+          expand: true,
           cwd: '<%%= config.modulePath %>/',
           dest: '<%%= config.dist %>/',
           src: ['manifest.json', manifest.sqlDir + '/**/*']
