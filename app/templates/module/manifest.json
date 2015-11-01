@@ -10,7 +10,7 @@
   "scripts": [
     "scripts/initNgModule.js",
     "scripts/controllers/main.js",
-    "scripts/controllers/somepage.js",
+    "scripts/controllers/somePage.js",
     "scripts/initWebModule.js"
   ],
   "styles": [
